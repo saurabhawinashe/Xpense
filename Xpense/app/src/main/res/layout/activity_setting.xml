@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.homex.fexp.setting">
+    <Button
+        android:text="Save"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingsbutton"
+        android:layout_marginBottom="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="345dp"
+        android:layout_height="56dp"
+        android:inputType="phone"
+        android:text="Phone"
+        android:textColor="#000"
+        android:ems="10"
+        android:id="@+id/cphone"
+        android:layout_weight="0.22"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/cemail"
+        android:layout_alignStart="@+id/cpass" />
+
+    <EditText
+        android:layout_width="345dp"
+        android:layout_height="56dp"
+        android:text="Name"
+        android:textColor="#000"
+        android:ems="10"
+        android:id="@+id/cname"
+        android:layout_weight="0.09"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/perinfo"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="345dp"
+        android:layout_height="56dp"
+        android:inputType="textEmailAddress"
+        android:text="Email"
+        android:textColor="#000"
+        android:ems="10"
+        android:id="@+id/cemail"
+        android:layout_weight="0.19"
+        android:hint="Email"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/cname"
+        android:layout_alignStart="@+id/cname" />
+
+    <EditText
+        android:layout_width="345dp"
+        android:layout_height="56dp"
+        android:inputType="textPassword"
+        android:textColorHint="#666"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/cpass"
+        android:hint="Password"
+        android:layout_weight="0.14"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/cphone"
+        android:layout_alignStart="@+id/cemail" />
+
+    <TextView
+        android:id="@+id/perinfo"
+        android:layout_width="330dp"
+        android:layout_height="56dp"
+        android:text="Personal Information"
+        android:textColor="#000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/cname" />
+
+</RelativeLayout>

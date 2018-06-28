@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="128dp"
+        android:layout_height="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="?attr/colorAccent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="128dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView6"
+        app:srcCompat="@android:color/holo_blue_dark" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="128dp"
+        android:layout_height="10dp"
+        app:srcCompat="?android:attr/colorActivatedHighlight"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Set Time "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/imageView6"
+        android:layout_toStartOf="@+id/imageView7"
+        android:layout_marginEnd="30dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Receive notifications at "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/textView15"
+        android:layout_alignStart="@+id/textView15" />
+
+    <EditText
+        android:id="@+id/timebox"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time"
+        android:layout_marginStart="19dp"
+        android:layout_alignBaseline="@+id/textView18"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_toEndOf="@+id/textView18" />
+
+</RelativeLayout>

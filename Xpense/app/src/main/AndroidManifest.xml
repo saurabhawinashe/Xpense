@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.homex.fexp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dollar"
+        android:label="Xpense"
+        android:roundIcon="@drawable/dollar"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".add_expense"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".set_limit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".setting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".addexp1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".first"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".NotificationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".setlist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mybills"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".view_expense" android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

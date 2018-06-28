@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/stck2"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.homex.fexp.MainActivity"
+    tools:showIn="@layout/app_bar_main" >
+
+    <!--<com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="17dp"
+        />
+        -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/cardview_dark_background"
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cardView">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+                 android:layout_centerHorizontal="true"
+
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="0dp"
+            android:text="Recent Expense"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <TextView
+            android:id="@+id/rdes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <TextView
+            android:id="@+id/rcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <TextView
+            android:id="@+id/rdat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <TextView
+            android:id="@+id/sym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="45dp"
+            android:text=""
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/ramt"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="45dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/errormsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="50dp"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="160dp"
+        android:background="@color/cardview_dark_background"
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cardView2" >
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="10dp"
+            android:text="This month expense"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="35dp"
+            android:text="₹"
+            android:textColor="#000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/rexpval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="33dp"
+            android:text=""
+            android:textColor="#000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+             />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="290dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/cardview_dark_background"
+        android:id="@+id/cardView3">
+
+        <ImageView
+            android:id="@+id/rimg2"
+            android:layout_width="138dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:text="Recent Bills"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/rimg1"
+            android:layout_width="138dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@color/cardview_light_background" />
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/emailbtn"
+        android:layout_width="309dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/cardView3"
+        android:layout_marginTop="445dp"
+        android:layout_marginLeft="26dp"
+        android:text="Click to get Monthly Statement"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+</RelativeLayout>
