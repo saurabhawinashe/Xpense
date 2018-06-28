@@ -1,3 +1,3 @@
 # Xpense
 
-An Expense manager for all youor daily needs.
+An Expense manager for all your daily needs.
